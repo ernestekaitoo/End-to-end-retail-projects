@@ -1,6 +1,6 @@
 #  Retail Intelligence & Churn MLOps Pipeline
 
-![MLOps Pipeline](https://github.com/ernestekaitoo/End-to-end-retail-projects/actions/workflows/mlops-pipeline.yml/badge.svg)
+[![MLOps Pipeline](https://github.com/ernestekaitoo/End-to-end-retail-projects/actions/workflows/main.yml/badge.svg)](https://github.com/ernestekaitoo/End-to-end-retail-projects/actions/workflows/main.yml)
 
 An end-to-end MLOps system that processes **1.06M+ retail transactions** to predict customer churn and forecast sales. This project demonstrates a production-grade architecture using microservices and automated CI/CD.
 
