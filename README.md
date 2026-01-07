@@ -1,5 +1,5 @@
-```markdown
 #  Retail Intelligence & Churn MLOps Pipeline
+
 ![MLOps Pipeline](https://github.com/ernestekaitoo/End-to-end-retail-projects/actions/workflows/mlops-pipeline.yml/badge.svg)
 
 An end-to-end MLOps system that processes **1.06M+ retail transactions** to predict customer churn and forecast sales. This project demonstrates a production-grade architecture using microservices and automated CI/CD.
@@ -11,6 +11,26 @@ The system is built using a **Decoupled Microservices Architecture** orchestrate
 * **The Face (Frontend):** An interactive Streamlit dashboard for real-time customer risk assessment.
 * **The Pipeline:** Automated data cleaning, RFM analysis, and K-Means clustering.
 
+
+.
+├── .github/
+│   └── workflows/
+│       └── mlops-pipeline.yml    # CI/CD: Automated builds & linting
+├── data/                         # 1.06M+ records (ignored via .gitignore)
+├── models/                       # Serialized RF & Scaler artifacts
+├── src/                          # Modular engine (Train/Forecast)
+│   ├── __init__.py
+│   ├── train.py
+│   ├── forecast.py
+│   └── predict.py
+├── app.py                        # Service 1: FastAPI "The Brain"
+├── dashboard.py                  # Service 2: Streamlit "The Face"
+├── Dockerfile                    # API container blueprint
+├── Dockerfile.dashboard          # Dashboard container blueprint
+├── docker-compose.yml            # Multi-service orchestrator
+├── Makefile                      # One-word automation (make up)
+├── requirements.txt              # Pinned production dependencies
+└── README.md                     # Documentation & Architecture
 
 
 ##  Tech Stack
@@ -36,30 +56,4 @@ Access the **Dashboard** at `http://localhost:8501` and the **API Docs** at `htt
 * **Automated CI/CD:** Integrated GitHub Actions to automate linting and Docker builds.
 * **Scale:** Successfully handled a global retail dataset with over 1 million records.
 
-```
-
----
-
-## 2. The LinkedIn Announcement
-Post this along with a screenshot of your **Streamlit Dashboard** or a screen-recording of the **GitHub Actions** green checkmarks.
-
-**Headline:**  Just launched: A Production-Grade MLOps Pipeline for Retail Intelligence
-
-**Body:**
-I’m excited to share my latest project—a full-stack MLOps system designed to handle the complexities of real-world retail data. 
-
-Moving beyond notebooks, I engineered a decoupled **Microservices Architecture** that processes over **1.06 million transactions** to identify at-risk customers and forecast future revenue.
-
-**Key Technical Highlights:**
-   **Containerization:** Orchestrated a dual-container environment using **Docker Compose** (FastAPI backend + Streamlit frontend).
-   **CI/CD:** Implemented a **GitHub Actions** pipeline to automate environment builds and code quality checks.
-   **ML Engineering:** Developed a Random Forest classifier and a Prophet forecasting model, ensuring 100% feature parity via **Joblib** serialization.
-
-This project taught me that "clean code" is just the start—building a reproducible, scalable infrastructure is what brings ML to life.
-
-Check out the repo here: [https://github.com/ernestekaitoo/End-to-end-retail-projects]
-
-#MLOps #DataEngineering #Docker #FastAPI #DataScience #MachineLearning
-
----
 
