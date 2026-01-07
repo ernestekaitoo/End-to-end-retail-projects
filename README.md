@@ -21,9 +21,8 @@ The dashboard allows stakeholders to input customer metrics and receive real-tim
 The model is served via a REST API, featuring interactive Swagger documentation for seamless integration.
 ![FastAPI Swagger UI](screenshots/fastapi.png)
 
-### HuggingFace Live Demo
-![Live Demo on Hugging Face](https://huggingface.co/spaces/Richkaitoo/retail_app) > (Note: Free tier hosting may take 60 seconds to "wake up" if inactive.)
-
+###  HuggingFace Live Demo
+**[Click here to view the Interactive Dashboard](https://huggingface.co/spaces/Richkaitoo/retail_app)** *(Note: Free tier hosting may take 60 seconds to "wake up" if inactive.)*
 
 
 ```
