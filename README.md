@@ -12,7 +12,7 @@ The system is built using a **Decoupled Microservices Architecture** orchestrate
 * **The Pipeline:** Automated data cleaning, RFM analysis, and K-Means clustering.
 
 
-
+```
 ├── .github/
 │   └── workflows/
 │       └── mlops-pipeline.yml    # CI/CD: Automated builds & linting
@@ -31,7 +31,7 @@ The system is built using a **Decoupled Microservices Architecture** orchestrate
 ├── Makefile                      # One-word automation (make up)
 ├── requirements.txt              # Pinned production dependencies
 └── README.md                     # Documentation & Architecture
-
+```
 
 ##  Tech Stack
 * **Data:** Pandas, NumPy (Processing 1.06M rows)
