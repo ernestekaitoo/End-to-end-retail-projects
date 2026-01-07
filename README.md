@@ -11,6 +11,16 @@ The system is built using a **Decoupled Microservices Architecture** orchestrate
 * **The Face (Frontend):** An interactive Streamlit dashboard for real-time customer risk assessment.
 * **The Pipeline:** Automated data cleaning, RFM analysis, and K-Means clustering.
 
+## 🖥️ Project Previews
+
+### User Interface (Streamlit)
+The dashboard allows stakeholders to input customer metrics and receive real-time churn probabilities.
+![Streamlit Dashboard Interface](screenshots/streamlit.png)
+
+### API Documentation (FastAPI/Swagger)
+The model is served via a REST API, featuring interactive Swagger documentation for seamless integration.
+![FastAPI Swagger UI](screenshots/fastapi.png)
+
 
 ```
 ├── .github/
